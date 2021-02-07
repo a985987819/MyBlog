@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
     a {
-        color: #7dc9b6;
+        color: #d2ecf9;
         text-decoration: none;
     }
 
@@ -55,12 +55,13 @@
         justify-content: space-between;
         width: 150px;
         margin: 20px auto 0;
+        color: white;
     }
 
     .cover {
         background-image: url('../assets/img/WheatherChild.jpg');
         z-index: 0;
-        filter:blur(5px);
+        filter:blur(4px);
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -68,25 +69,30 @@
         align-items: center;
         background-repeat:no-repeat;
         background-size:cover;
+        position: absolute;
     }
     .container{
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         height: 100vh;
         width: 100vw;
-        position: relative;
+        position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .dialog {
-        background: #2d3845;
+        /*background: #019be0;*/
         width: 600px;
         height: 400px;
-        box-shadow: 0 20px 15px #1f262f;
+        box-shadow: 0 20px 20px #1f262f;
         position: absolute;
         text-align: center;
         color: white;
         z-index: 10;
+        background-image: linear-gradient(to bottom right, #0aaefc, #0089c7);
     }
 
     .content {
@@ -101,6 +107,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        color: white;
     }
 
     .others {
